@@ -1,0 +1,99 @@
+@keyframes animation {
+    from {
+        transform: rotate(0);
+        scale: 1;
+    }
+    50% {
+        scale: 0.4;
+    }
+    to {
+        transform: rotate(360deg);
+        scale: 1;
+    }
+}
+@keyframes changecolor {
+    0% {
+        background-color: antiquewhite;
+    }
+    25% {
+        background-color: cadetblue;
+    }
+    40% {
+        background-color: purple;
+    }
+    50% {
+        background-color: aqua;
+    }
+    60% {
+        background-color: chartreuse;
+    }
+    75% {
+        background-color: lavender;
+    }
+    100% {
+        background-color: antiquewhite;
+    }
+}
+@keyframes bigger {
+    0% {
+        color: black;
+        scale: 1.0;
+    }
+    25% {
+        color: royalblue;
+        scale: 0.4;
+    }
+    40% {
+        color: cadetblue;
+    }
+    50% {
+        color: red;
+        scale: 2.0;
+    }
+    60% {
+        color: chartreuse;
+    }
+    75% {
+        color: cadetblue;
+        scale: 0.4;
+    }
+    100% {
+        color: black;
+        scale: 1.0;
+    }
+}
+.button {
+    animation-name: animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    /*display: none;*/
+}
+body {
+    animation-name: changecolor;
+    animation-iteration-count: infinite;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+}
+.big {
+    font-size: 40px;
+    position: absolute;
+    left: 75vw;
+    top: 60vh;
+    animation-name: bigger;
+    animation-duration: 0.4s;
+    animation-iteration-count: infinite;
+    /*display: none;*/
+}
+.qid {
+    position: absolute;
+    top: 10vh;
+    left: 10vw;
+    height: 80vh;
+    animation-name: animation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /*display: none;*/
+}
